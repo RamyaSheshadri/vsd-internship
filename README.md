@@ -30,8 +30,6 @@ sum1ton.c:
 This is the input C source file that will be compiled (sum1ton.c).
 In summary, this command compiles the C file sum1ton.c for a 64-bit RISC-V system, generating an optimized object file (sum1ton.o) with 64-bit ABI and RISC-V integer instruction set.
 
-Cat is the short form for concatenate
-
 #### What is ls -ltr?
 The ls -ltr command is a combination of options for the ls command in Unix/Linux, which lists directory contents. Here's a breakdown of the flags:
 -l: Long format. This option provides a detailed listing that includes file permissions, number of links, owner, group, size, and modification time of the files.
@@ -81,6 +79,81 @@ In Practice
 Workflow: A common workflow is to first use GCC to compile code into a RISC-V-compatible binary. This binary is then loaded into Spike to simulate its execution, allowing the developer to test and debug their code.
 Usage: GCC is essential for generating machine code, while Spike is useful for verifying that this machine code behaves as expected on a RISC-V architecture.
 In summary, GCC is for compiling code into machine instructions, while Spike is for emulating and testing those instructions on a virtual RISC-V processor.
+
+# Task 3:
+## 1.Various RISC-V Instruction Types:
+The main RISC-V instruction types include:
+R-type: Register-Register operations (e.g., add, sub)
+B-type: Conditional branches (e.g., beq, bne)
+U-type: Upper immediate (e.g., lui, auipc)
+J-type: Jump instructions (e.g., jal)
+I-type: Immediate operations (e.g., addi, lw)
+S-type: Store instructions (e.g., sw)
+
+## 2.Identify 15 unique RISC-V instructions from riscv-objdmp of your application code 
+lui - Loads an upper immediate value into the upper 20 bits of a register.
+addi - Adds an immediate value to a register.
+li - Loads an immediate value into a register (a pseudoinstruction, typically expanded to addi with zero).
+sd - Stores a double word from a register to memory.
+jal - Jumps and links to a specific address, storing the return address in a register.
+ld - Loads a double word from memory to a register.
+ret - Returns from a function (pseudoinstruction for jalr).
+auipc - Adds an upper immediate to the program counter.
+beqz - Branches if a register is zero (pseudoinstruction, typically expands to beq).
+j - Unconditional jump (pseudoinstruction for jal).
+add - Adds two registers.
+sub - Subtracts two registers.
+mv - Moves a value from one register to another (pseudoinstruction, typically addi with zero).
+lw - Loads a word from memory into a register.
+c.nop - Compressed NOP instruction, performing no operation (pseudoinstruction).
+
+## 3.Identify exact 32-bit instruction code in the instruction type format for 15 unique instructions
+#### lui a2, 0x1:
+Binary Encoding: 00000000000000000001000110110111
+Type: U-Type
+#### lui a0, 0x21:
+Binary Encoding: 00000000001000000000100010110111
+Type: U-Type
+#### addi a2, a2, -1093:
+Binary Encoding: 11111111101100101010001010010011
+Type: I-Type
+#### li a1, 77:
+Binary Encoding: 00000000010011010001000010010011
+Type: I-Type (as addi with zero as source register)
+#### sd ra, a0, 384:
+Binary Encoding: 00000001100001011000000010100011
+Type: S-Type
+#### jal ra, <printf>:
+Binary Encoding: 00000000000000000000100011101111
+Type: J-Type
+#### ld ra, 0(sp):
+Binary Encoding: 00000000000000010110000010000011
+Type: I-Type
+#### ret:
+Binary Encoding: 00000000000000000000000001100111
+Type: I-Type (as jalr to x0)
+#### auipc a5, 0xfffff:
+Binary Encoding: 11111111111111111111001010110111
+Type: U-Type
+#### beqz a0, <register_fini+0x18>:
+Binary Encoding: 00000000000000000000001001100011
+Type: B-Type (pseudoinstruction for beq)
+#### j <atexit>:
+Binary Encoding: 00000000000000000000000011101111
+Type: J-Type (pseudoinstruction for jal)
+#### add a0, a0, a2:
+Binary Encoding: 00000000001001010000001010110011
+Type: R-Type
+#### sub a2, a2, a0:
+Binary Encoding: 01000000000010101000001010110011
+Type: R-Type
+#### mv a1, a0:
+Binary Encoding: 00000000000001010001000010010011
+Type: I-Type (pseudoinstruction for addi)
+#### lw a0, 0(sp):
+Binary Encoding: 00000000000000010110000000000011
+Type: I-Type
+
 
 
 
