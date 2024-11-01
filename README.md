@@ -89,6 +89,16 @@ Workflow: A common workflow is to first use GCC to compile code into a RISC-V-co
 Usage: GCC is essential for generating machine code, while Spike is useful for verifying that this machine code behaves as expected on a RISC-V architecture.
 In summary, GCC is for compiling code into machine instructions, while Spike is for emulating and testing those instructions on a virtual RISC-V processor.
 
+![task2](https://github.com/user-attachments/assets/399244fd-ef87-4fea-b338-8bc0c66aebca)
+![task 2b](https://github.com/user-attachments/assets/de5b26b5-d49e-4210-8b11-1c1adf8e5bc5)
+![task 2 output](https://github.com/user-attachments/assets/d5a5bf10-17bf-42bb-b308-c5d7248e93f6)
+![task 2 c code](https://github.com/user-attachments/assets/7f86124e-78c6-4f64-aa18-fc9f2594d658)
+
+
+
+
+
+
 # Task 3:
 ## 1.Various RISC-V Instruction Types:
 The main RISC-V instruction types include:
@@ -98,6 +108,9 @@ U-type: Upper immediate (e.g., lui, auipc)
 J-type: Jump instructions (e.g., jal)
 I-type: Immediate operations (e.g., addi, lw)
 S-type: Store instructions (e.g., sw)
+
+![task 3](https://github.com/user-attachments/assets/147e93ae-a223-4763-a877-3d933a80836a)
+
 
 ## 2.Identify 15 unique RISC-V instructions from riscv-objdmp of your application code 
 lui - Loads an upper immediate value into the upper 20 bits of a register.
@@ -162,6 +175,8 @@ Type: I-Type (pseudoinstruction for addi)
 #### lw a0, 0(sp):
 Binary Encoding: 00000000000000010110000000000011
 Type: I-Type
+
+
 
 
 
