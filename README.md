@@ -1,5 +1,5 @@
-Create GitHub repo.
-Install RISC-V toolchain using VDI shared over whatsapp group. 
+#Create GitHub repo.
+##Install RISC-V toolchain using VDI shared over whatsapp group. 
 Refer to C based Lab video and RISC-V based lab videos. 
 Complete exact steps on your machine.
 Upload snapshot of compiled C code and RISC-V Objdmp on your GitHub repo.
