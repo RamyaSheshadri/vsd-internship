@@ -1,12 +1,12 @@
-#Create GitHub repo.
-##Install RISC-V toolchain using VDI shared over whatsapp group. 
-Refer to C based Lab video and RISC-V based lab videos. 
-Complete exact steps on your machine.
-Upload snapshot of compiled C code and RISC-V Objdmp on your GitHub repo.
+# Create GitHub repo.
+## Install RISC-V toolchain using VDI shared over whatsapp group. 
+## Refer to C based Lab video and RISC-V based lab videos. 
+## Complete exact steps on your machine.
+## Upload snapshot of compiled C code and RISC-V Objdmp on your GitHub repo.
 
-Contents learnt from this task:
+### Task 1:
 
-Meaning of the command: riscv64-unknown-elf-gcc -O1 -mabi=lp64 -march=rv64i -o sum1ton.o sum1ton.c
+#### Meaning of the command: riscv64-unknown-elf-gcc -O1 -mabi=lp64 -march=rv64i -o sum1ton.o sum1ton.c
 
 This command is invoking the RISC-V GCC cross-compiler (riscv64-unknown-elf-gcc) to compile a C program (sum1ton.c) into a RISC-V ELF object file (sum1ton.o) for the 64-bit RISC-V architecture. Here’s a breakdown of the individual options:
 riscv64-unknown-elf-gcc:
