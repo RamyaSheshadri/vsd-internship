@@ -1,8 +1,12 @@
-## Create GitHub repo.
-## Install RISC-V toolchain using VDI shared over whatsapp group. 
-## Refer to C based Lab video and RISC-V based lab videos. 
-## Complete exact steps on your machine.
-## Upload snapshot of compiled C code and RISC-V Objdmp on your GitHub repo.
+### VSDSquadron Mini Research Internship
+### Instructor: Mr.Kunal Ghosh
+
+#### Steps to start the tasks assigned:
+#### 1.Create GitHub repo.
+#### 2.Install RISC-V toolchain using VDI shared over whatsapp group. 
+#### 3.Refer to C based Lab video and RISC-V based lab videos. 
+#### 4.Complete exact steps on your machine.
+#### 5.Upload snapshot of compiled C code and RISC-V Objdmp on your GitHub repo.
 
 # Task 1:
 
