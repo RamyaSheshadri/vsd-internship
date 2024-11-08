@@ -128,21 +128,36 @@ S-type: Store instructions (e.g., sw)
 ![task 3](https://github.com/user-attachments/assets/147e93ae-a223-4763-a877-3d933a80836a)
 
 #### ii)15 unique RISC-V instructions from riscv-objdmp of the application code: 
-lui - Loads an upper immediate value into the upper 20 bits of a register.
-addi - Adds an immediate value to a register.
-li - Loads an immediate value into a register (a pseudoinstruction, typically expanded to addi with zero).
-sd - Stores a double word from a register to memory.
-jal - Jumps and links to a specific address, storing the return address in a register.
-ld - Loads a double word from memory to a register.
-ret - Returns from a function (pseudoinstruction for jalr).
-auipc - Adds an upper immediate to the program counter.
-beqz - Branches if a register is zero (pseudoinstruction, typically expands to beq).
-j - Unconditional jump (pseudoinstruction for jal).
-add - Adds two registers.
-sub - Subtracts two registers.
-mv - Moves a value from one register to another (pseudoinstruction, typically addi with zero).
-lw - Loads a word from memory into a register.
-c.nop - Compressed NOP instruction, performing no operation (pseudoinstruction).
+#### lui:
+Loads an upper immediate value into the upper 20 bits of a register.
+#### addi: 
+Adds an immediate value to a register.
+#### li:
+Loads an immediate value into a register (a pseudoinstruction, typically expanded to addi with zero).
+#### sd: 
+Stores a double word from a register to memory.
+#### jal: 
+Jumps and links to a specific address, storing the return address in a register.
+#### ld :
+Loads a double word from memory to a register.
+#### ret: 
+Returns from a function (pseudoinstruction for jalr).
+#### auipc:
+Adds an upper immediate to the program counter.
+#### beqz:
+Branches if a register is zero (pseudoinstruction, typically expands to beq).
+#### j: 
+Unconditional jump (pseudoinstruction for jal).
+#### add: 
+Adds two registers.
+#### sub: 
+Subtracts two registers.
+#### mv:
+Moves a value from one register to another (pseudoinstruction, typically addi with zero).
+#### lw: 
+Loads a word from memory into a register.
+#### c.nop:
+Compressed NOP instruction, performing no operation (pseudoinstruction).
 
 ## iii)The exact 32-bit instruction code in the instruction type format for 15 unique instructions
 #### lui a2, 0x1:
