@@ -207,17 +207,26 @@ Binary Encoding: 00000000000000010110000000000011
 Type: I-Type
 
 # Task 4:Use this RISC-V Core Verilog netlist and testbench for functional simulation experiment. Upload waveform snapshots for the commands on your GitHub. Reference GitHub repo is here. 
-#### Reference repo link:https://github.com/vinayrayapati/rv32i/blob/main/iiitb_rv32i.v
-#### Create a folder on the main screen in Oracle VirtualBox. change the directory in the terminal to this folder by using command:
-cd /address/of/folder
-#### Open GitHub and click on Code:Clone https and copy the link.
-#### Clone the repository:Clone the repository by using the command:
-git clone https://path
+ #### i)Create a folder on the desktop in Oracle VirtualBox.
+ #### ii)Change the directory to this path to clone the repository:
+ cd path/of/folder
+ #### ii)Clone the Repository by using the follwing command:
+git clone
+git clone https://github.com/vinayrayapati/rv32i link
+#### iii)Navigate to the Cloned Directory.
+Change the directory to the cloned repository.
+cd rv32i
+#### iv)Compile the Verilog Code and Testbench.
+Run the following iverilog command to compile the Verilog code and testbench.
+'iverilog -o iiitb_rv32i iiitb_rv32i.v iiitb_rv32i_tb.v'
+#### v)Simulate the Verilog Code.
+After compiling, simulate the Verilog code by running the compiled file.
+'./iiitb_rv321'
 
-Waveform of 
+#### Open GTKWAVE to observe the waveforms:
+#### i)
 ![task 4 ii](https://github.com/user-attachments/assets/75d0c9ec-b159-4f5d-a26f-1a3d956cd913)
-
-Waveform of all the commands:
+#### ii)
 ![task 4 iii](https://github.com/user-attachments/assets/7c27833d-04dc-49f6-82ce-1a0c1ca846fa)
 
 
