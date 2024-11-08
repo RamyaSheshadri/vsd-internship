@@ -9,28 +9,44 @@
 #### Upload snapshot of compiled C code and RISC-V Objdmp on your GitHub repo.
 
 
+### A C program of summation of numbers from 1 to n:
+![task 1 part 1](https://github.com/user-attachments/assets/9375fd75-ef2a-4700-88bb-72fcf182ac70)
 
-#### Meaning of the command: riscv64-unknown-elf-gcc -O1 -mabi=lp64 -march=rv64i -o sum1ton.o sum1ton.c
+### The same program can be complied in assembly level language (.o):
+![task 1 part 2](https://github.com/user-attachments/assets/bfcb0223-4649-4d0d-a14a-877aafbf890e)
+
+### Checking the number of instructions it takes in .c:
+<img width="956" alt="task 1 obj dump" src="https://github.com/user-attachments/assets/17b19258-7c64-4b93-b307-9ba589e056fa">
+
+### Number of instructions significantly reduces when O-fast is used:
+<img width="959" alt="task 1 obj dump 2" src="https://github.com/user-attachments/assets/713abcc7-2444-48a1-8e41-6a5352977dda">
+
+## Key takeaways from task1:
+
+### Meaning of the command: riscv64-unknown-elf-gcc -O1 -mabi=lp64 -march=rv64i -o sum1ton.o sum1ton.c
 
 This command is invoking the RISC-V GCC cross-compiler (riscv64-unknown-elf-gcc) to compile a C program (sum1ton.c) into a RISC-V ELF object file (sum1ton.o) for the 64-bit RISC-V architecture. Here’s a breakdown of the individual options:
-riscv64-unknown-elf-gcc:
+#### riscv64-unknown-elf-gcc:
 This is the cross-compiler for the RISC-V 64-bit architecture. It is used to compile programs that will run on RISC-V systems but are being compiled on a different host (like x86).
-riscv64: Refers to the target architecture, which is RISC-V 64-bit.
-unknown-elf: Specifies that the target system is an embedded system using the ELF (Executable and Linkable Format).
--O1:
+#### riscv64:
+Refers to the target architecture, which is RISC-V 64-bit.
+#### unknown-elf: 
+Specifies that the target system is an embedded system using the ELF (Executable and Linkable Format).
+#### -O1:
 This flag enables optimization level 1, which applies basic optimizations to improve performance without significantly increasing compilation time. It's a trade-off between execution speed and compilation speed.
-
 #### -mabi=lp64:
 This specifies the ABI (Application Binary Interface) to use. lp64 means:
-l: long data type is 64 bits.
-p: Pointers are 64 bits.
-64: Integer and floating-point values are 64 bits.
-
+#### l:
+long data type is 64 bits.
+#### p:
+Pointers are 64 bits.
+#### 64: 
+Integer and floating-point values are 64 bits.
 #### -march=rv64i:
 Specifies the target architecture to be rv64i, which stands for RISC-V 64-bit with the base integer instruction set (I). This is the minimal instruction set for a RISC-V 64-bit CPU.
--o sum1ton.o:
+#### -o sum1ton.o:
 This specifies the output file name. In this case, the compiled object file will be named sum1ton.o.
-sum1ton.c:
+#### sum1ton.c:
 This is the input C source file that will be compiled (sum1ton.c).
 In summary, this command compiles the C file sum1ton.c for a 64-bit RISC-V system, generating an optimized object file (sum1ton.o) with 64-bit ABI and RISC-V integer instruction set.
 
@@ -50,22 +66,9 @@ To disassemble an object file, you'd first compile the C source file (sum1ton.c)
 
 #### How is using this command better in terms of number of instructions?
 riscv64-unknown-elf-gcc -Ofast -mabi=lp64 -march=rv64i -o sum1ton.o sum1ton.c 
--Ofast:This is an optimization flag. It enables the most aggressive optimizations, more so than -O3. It may break strict standards compliance in favor of improving speed. It includes all -O3 optimizations and disables strict floating-point math operations to increase performance.
-Be cautious with -Ofast, as it might change the behavior of programs that depend on strict adherence to standards.
-
-### A C program of summation of numbers from 1 to n:
-![task 1 part 1](https://github.com/user-attachments/assets/9375fd75-ef2a-4700-88bb-72fcf182ac70)
-
-### The same program can be complied in assembly level language (.o):
-![task 1 part 2](https://github.com/user-attachments/assets/bfcb0223-4649-4d0d-a14a-877aafbf890e)
-
-### Checking the number of instructions it takes in .c:
-<img width="956" alt="task 1 obj dump" src="https://github.com/user-attachments/assets/17b19258-7c64-4b93-b307-9ba589e056fa">
-
-### Number of instructions significantly reduces when O-fast is used:
-<img width="959" alt="task 1 obj dump 2" src="https://github.com/user-attachments/assets/713abcc7-2444-48a1-8e41-6a5352977dda">
-
-
+#### -Ofast:
+This is an optimization flag. It enables the most aggressive optimizations, more so than -O3. It may break strict standards compliance in favor of improving speed. It includes all -O3 optimizations and disables strict floating-point math operations to increase performance.
+Be cautious with -Ofast, as it might change the behavior of programs that depend on strict adherence to standards
 
 
 
