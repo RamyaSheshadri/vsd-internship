@@ -75,6 +75,13 @@ Be cautious with -Ofast, as it might change the behavior of programs that depend
 
 
 # Task 2:
+### SPIKE Simulation and observation with -O1 and -Ofast. Upload snapshot of compiled C Code, RISC-V Objdmp with above options on your GitHub repo. Write a simple C program for any simple application and compile with RISC-V GCC/SPIKE"
+
+![task2](https://github.com/user-attachments/assets/399244fd-ef87-4fea-b338-8bc0c66aebca)
+![task 2b](https://github.com/user-attachments/assets/de5b26b5-d49e-4210-8b11-1c1adf8e5bc5)
+![task 2 output](https://github.com/user-attachments/assets/d5a5bf10-17bf-42bb-b308-c5d7248e93f6)
+![task 2 c code](https://github.com/user-attachments/assets/7f86124e-78c6-4f64-aa18-fc9f2594d658)
+
 #### What is spike simulator?
 Spike is the official RISC-V ISA (Instruction Set Architecture) simulator, developed by the RISC-V Foundation. It's used to simulate RISC-V programs, allowing developers to test and debug their code in a virtual RISC-V environment before deploying on actual hardware. Spike simulates the RISC-V processor, providing a faithful emulation of the ISA that helps in debugging and performance testing for RISC-V software.
 
@@ -103,12 +110,6 @@ In Practice
 Workflow: A common workflow is to first use GCC to compile code into a RISC-V-compatible binary. This binary is then loaded into Spike to simulate its execution, allowing the developer to test and debug their code.
 Usage: GCC is essential for generating machine code, while Spike is useful for verifying that this machine code behaves as expected on a RISC-V architecture.
 In summary, GCC is for compiling code into machine instructions, while Spike is for emulating and testing those instructions on a virtual RISC-V processor.
-
-![task2](https://github.com/user-attachments/assets/399244fd-ef87-4fea-b338-8bc0c66aebca)
-![task 2b](https://github.com/user-attachments/assets/de5b26b5-d49e-4210-8b11-1c1adf8e5bc5)
-![task 2 output](https://github.com/user-attachments/assets/d5a5bf10-17bf-42bb-b308-c5d7248e93f6)
-![task 2 c code](https://github.com/user-attachments/assets/7f86124e-78c6-4f64-aa18-fc9f2594d658)
-
 
 
 
