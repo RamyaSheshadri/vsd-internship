@@ -116,7 +116,7 @@ Output: Produces machine code that is ready to be executed on a device or emulat
 
 
 # Task 3:
-## 1.Various RISC-V Instruction Types:
+#### i)Various RISC-V Instruction Types:
 The main RISC-V instruction types include:
 R-type: Register-Register operations (e.g., add, sub)
 B-type: Conditional branches (e.g., beq, bne)
@@ -127,8 +127,7 @@ S-type: Store instructions (e.g., sw)
 
 ![task 3](https://github.com/user-attachments/assets/147e93ae-a223-4763-a877-3d933a80836a)
 
-
-## 2.Identify 15 unique RISC-V instructions from riscv-objdmp of your application code 
+#### ii)15 unique RISC-V instructions from riscv-objdmp of the application code: 
 lui - Loads an upper immediate value into the upper 20 bits of a register.
 addi - Adds an immediate value to a register.
 li - Loads an immediate value into a register (a pseudoinstruction, typically expanded to addi with zero).
@@ -145,7 +144,7 @@ mv - Moves a value from one register to another (pseudoinstruction, typically ad
 lw - Loads a word from memory into a register.
 c.nop - Compressed NOP instruction, performing no operation (pseudoinstruction).
 
-## 3.Identify exact 32-bit instruction code in the instruction type format for 15 unique instructions
+## iii)The exact 32-bit instruction code in the instruction type format for 15 unique instructions
 #### lui a2, 0x1:
 Binary Encoding: 00000000000000000001000110110111
 Type: U-Type
