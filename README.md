@@ -81,11 +81,12 @@ Be cautious with -Ofast, as it might change the behavior of programs that depend
 ![task2](https://github.com/user-attachments/assets/399244fd-ef87-4fea-b338-8bc0c66aebca)
 #### ii)
 ![task 2b](https://github.com/user-attachments/assets/de5b26b5-d49e-4210-8b11-1c1adf8e5bc5)
-#### iii)Sample C code used for demonstartion:
+#### iii)Sample C code used for demonstration:
 ![task 2 output](https://github.com/user-attachments/assets/d5a5bf10-17bf-42bb-b308-c5d7248e93f6)
 #### iv)
 ![task 2 c code](https://github.com/user-attachments/assets/7f86124e-78c6-4f64-aa18-fc9f2594d658)
 
+### Key learnings from Task2:
 #### What is the difference between GCC and Spike?
 The key difference between GCC (GNU Compiler Collection) and Spike is that GCC is a compiler, whereas Spike is an ISA simulator. They serve different purposes within the software development and testing process, especially when developing for the RISC-V architecture.
 #### Spike simulator:
