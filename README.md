@@ -247,12 +247,20 @@ Resistor (1kΩ) (for voltage division if required for echo pin to protect the GP
 #### Circuit Connection:
 The ultrasonic sensor has four pins: VCC, Trig, Echo, and GND. We will connect these to the VSDsquadron Mini Board as per the pin connections given in the table below.
 
-### HC-SR04 Pin	      Description    	     VSDsquadron Mini Board Pin
-    VCC	              Power supply(+5V)	      5V
-    GND	              Ground	                 GND
-    Trig	             Trigger Pulse Input	    GPIO 5
-    Echo	             Echo Pulse Output	      GPIO 6
+#### HC-SR04 Pin	      Description    	         VSDsquadron Mini Board Pin
+     VCC	              Power supply(+5V)	          5V
+     GND	              Ground	                     GND
+     Trig	             Trigger Pulse Input	        GPIO 5
+     Echo	             Echo Pulse Output	          GPIO 6
 
+### Circuit Explanation:
+#### Power Connections:
+i.Connect the VCC pin of the HC-SR04 sensor to the 5V pin of the VSDsquadron Mini Board.
+ii.Connect the GND pin of the sensor to the GND pin of the board.
+
+#### Trigger and Echo Connections:
+i.The Trig pin is connected to GPIO 5; this pin is used to send a pulse to initiate the measurement.
+ii.The Echo pin is connected to GPIO 6; this pin receives the reflected signal.
 
 
 
