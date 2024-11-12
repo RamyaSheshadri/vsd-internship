@@ -1,3 +1,5 @@
+## Name: Ramya Sheshadri 
+## College:BMS College Of Engineering,Bengaluru.
 ## VSDSquadron Mini Research Internship
 ## Instructor: Mr.Kunal Ghosh
 
@@ -261,6 +263,7 @@ ii.Connect the GND pin of the sensor to the GND pin of the board.
 #### Trigger and Echo Connections:
 i.The Trig pin is connected to GPIO 5; this pin is used to send a pulse to initiate the measurement.
 ii.The Echo pin is connected to GPIO 6; this pin receives the reflected signal.
+ <img width="533" alt="image" src="https://github.com/user-attachments/assets/4512025e-64c0-4e9a-b176-669410f2d702">
 
 
 
