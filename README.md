@@ -230,6 +230,28 @@ After compiling, simulate the Verilog code by running the compiled file.
 ![task 4 iii](https://github.com/user-attachments/assets/7c27833d-04dc-49f6-82ce-1a0c1ca846fa)
 
 
+# Task 5:
+### Project: Ultrasonic Distance Measurement using VSDsquadron Mini Board
+#### Overview:
+This project aims to create a simple distance measurement system using an HC-SR04 ultrasonic sensor and the VSDsquadron Mini Board. The sensor will measure the distance of an object from the sensor, and the result will be displayed on a serial monitor or LCD screen. The ultrasonic sensor sends sound waves, measures the time taken for the waves to bounce back, and calculates the distance based on the speed of sound.
+
+#### Components Required:
+VSDsquadron Mini Board - 1
+HC-SR04 Ultrasonic Sensor - 1
+Breadboard - 1
+Jumper Wires - Several
+USB Cable - 1 (for power and programming)
+LCD Display (Optional, for visual output)
+Resistor (1kΩ) (for voltage division if required for echo pin to protect the GPIO)
+
+#### Circuit Connection:
+The ultrasonic sensor has four pins: VCC, Trig, Echo, and GND. We will connect these to the VSDsquadron Mini Board as per the pin connections given in the table below.
+
+### HC-SR04 Pin	      Description    	     VSDsquadron Mini Board Pin
+    VCC	              Power supply(+5V)	      5V
+    GND	              Ground	                 GND
+    Trig	             Trigger Pulse Input	    GPIO 5
+    Echo	             Echo Pulse Output	      GPIO 6
 
 
 
