@@ -209,33 +209,34 @@ Binary Encoding: 00000000000000010110000000000011
 Type: I-Type
 
 # Task 4:Use this RISC-V Core Verilog netlist and testbench for functional simulation experiment. Upload waveform snapshots for the commands on your GitHub. Reference GitHub repo is here. 
- #### i)Create a folder on the desktop in Oracle VirtualBox.
- #### ii)Change the directory to this path to clone the repository:
+ ### i)Create a folder on the desktop in Oracle VirtualBox.
+ ### ii)Change the directory to this path to clone the repository:
  cd path/of/folder
- #### ii)Clone the Repository by using the follwing command:
+ ### ii)Clone the Repository by using the follwing command:
 git clone
 git clone https://github.com/vinayrayapati/rv32i link
-#### iii)Navigate to the Cloned Directory.
+### iii)Navigate to the Cloned Directory.
 Change the directory to the cloned repository.
 cd rv32i
-#### iv)Compile the Verilog Code and Testbench.
+### iv)Compile the Verilog Code and Testbench.
 Run the following iverilog command to compile the Verilog code and testbench.
 'iverilog -o iiitb_rv32i iiitb_rv32i.v iiitb_rv32i_tb.v'
-#### v)Simulate the Verilog Code.
+### v)Simulate the Verilog Code.
 After compiling, simulate the Verilog code by running the compiled file.
 './iiitb_rv321'
-#### ![task 5](https://github.com/user-attachments/assets/97dbd1ff-99e8-41da-b44a-29cb50c8c1b0)
+### ![task 5](https://github.com/user-attachments/assets/97dbd1ff-99e8-41da-b44a-29cb50c8c1b0)
 
-#### vi)Open GTKWAVE to observe the waveforms by using following command:
+### vi)Open GTKWAVE to observe the waveforms by using following command:
 'gtkwave iiitb_rv321.vcd'
-Click on iiit_rv32i_tb under SST section.
-We get a set of commands which we have worked on in Task 3.
-click on 'clk' under signals and drag it to the time section so that the corresponding waveform can be seen.
-similarly, drag the command 'EX_MEM_ALUOUT[31:0] to obtain the following waveform:
+#### Click on iiit_rv32i_tb under SST section.
+#### We get a set of commands which we have worked on in Task 3.
+#### Click on 'clk' under signals and drag it to the time section so that the corresponding waveform can be seen.
+#### Similarly, drag the command 'EX_MEM_ALUOUT[31:0] to obtain the following waveform:
 ![task 5 ii](https://github.com/user-attachments/assets/e8feb2b7-2d1e-4c12-92e6-315645fb3dcd)
 
 
-#### ii)
+### Instruction 1: ADD r1,r2,r2
+![ins 1 task 4](https://github.com/user-attachments/assets/f50b12af-cce1-4f22-8d1c-dfa822915806)
 
 
 
