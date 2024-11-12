@@ -247,7 +247,14 @@ After compiling, simulate the Verilog code by running the compiled file.
 ### Instruction 4: OR r9,r2,r5
 ![ins 4 task 4](https://github.com/user-attachments/assets/0fe8c175-b93d-4644-a4da-07492b349f03)
 
+### Instruction 5: XOR r8,r1,r4
+![ins 5 task 4](https://github.com/user-attachments/assets/601f8513-d7ec-4c39-af56-d943882a2153)
 
+### Instruction 6: SLL r15,r11,r2
+![ins 6 task 4](https://github.com/user-attachments/assets/4e1a6f57-8e8d-497a-ad25-53409f0773a6)
+
+### Instruction 7: SLT r10,r2,r4
+![ins 7 task 4](https://github.com/user-attachments/assets/8a2eea1c-7786-4939-bbcb-7ec334dc01f1)
 
 
 
