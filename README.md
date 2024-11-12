@@ -238,6 +238,17 @@ After compiling, simulate the Verilog code by running the compiled file.
 ### Instruction 1: ADD r1,r2,r2
 ![ins 1 task 4](https://github.com/user-attachments/assets/f50b12af-cce1-4f22-8d1c-dfa822915806)
 
+### Instruction 2: SUB r3,r1,r2
+![ins 2 task 4](https://github.com/user-attachments/assets/44ab07b7-89bd-45cc-8b65-71760114734d)
+
+### Instruction 3: AND r2,r1,r3
+![ins 3 task 4](https://github.com/user-attachments/assets/23fac65a-cdd3-465a-b645-b01caf3186b7)
+
+### Instruction 4: OR r9,r2,r5
+![ins 4 task 4](https://github.com/user-attachments/assets/0fe8c175-b93d-4644-a4da-07492b349f03)
+
+
+
 
 
 # Task 5:
