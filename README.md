@@ -224,12 +224,19 @@ Run the following iverilog command to compile the Verilog code and testbench.
 #### v)Simulate the Verilog Code.
 After compiling, simulate the Verilog code by running the compiled file.
 './iiitb_rv321'
+#### ![task 5](https://github.com/user-attachments/assets/97dbd1ff-99e8-41da-b44a-29cb50c8c1b0)
 
-#### Open GTKWAVE to observe the waveforms:
-#### i)
-![task 4 ii](https://github.com/user-attachments/assets/75d0c9ec-b159-4f5d-a26f-1a3d956cd913)
+#### vi)Open GTKWAVE to observe the waveforms by using following command:
+'gtkwave iiitb_rv321.vcd'
+Click on iiit_rv32i_tb under SST section.
+We get a set of commands which we have worked on in Task 3.
+click on 'clk' under signals and drag it to the time section so that the corresponding waveform can be seen.
+similarly, drag the command 'EX_MEM_ALUOUT[31:0] to obtain the following waveform:
+![task 5 ii](https://github.com/user-attachments/assets/e8feb2b7-2d1e-4c12-92e6-315645fb3dcd)
+
+
 #### ii)
-![task 4 iii](https://github.com/user-attachments/assets/7c27833d-04dc-49f6-82ce-1a0c1ca846fa)
+
 
 
 # Task 5:
