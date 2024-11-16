@@ -6,8 +6,11 @@
 ### Download Oracle VirtualBox Manager:
 <img width="548" alt="oracle virtualbox" src="https://github.com/user-attachments/assets/d91a57db-cbf1-47f1-a683-8c3cb24e0053">
 
-### Click on "Show" to obtain the following:
+### Click on "Start" to obtain the following:
 ![vsdworkshop  Running  - Oracle VirtualBox 16-11-2024 21_41_46](https://github.com/user-attachments/assets/e3e4a933-8c79-44b5-bbe5-43615551bfad)
+
+Oracle VirtualBox Manager is the graphical user interface (GUI) component of Oracle VM VirtualBox, a powerful and free virtualization software developed by Oracle Corporation. It allows users to create, configure, and manage virtual machines (VMs) on their computers. These virtual machines can run multiple operating systems simultaneously on a single physical machine and also provide cross platform support hence making it an essential tool for testing, development, and experimentation.
+Therefore this will be used in all the tasks covered in this internship.
 
 # Task 1:
 #### Create GitHub repo.
@@ -269,23 +272,57 @@ After compiling, simulate the Verilog code by running the compiled file.
 #### Overview:
 This project aims to create a simple distance measurement system using an HC-SR04 ultrasonic sensor and the VSDsquadron Mini Board. The sensor will measure the distance of an object from the sensor, and the result will be displayed on a serial monitor or LCD screen. The ultrasonic sensor sends sound waves, measures the time taken for the waves to bounce back, and calculates the distance based on the speed of sound.
 
+#### Some real life applications:
+The Ultrasonic Distance Measurement application is highly versatile and can be useful in numerous fields. Here's how this application can make an impact:
+
+#### i.Industrial Applications:
+#### Object Detection: 
+Used in automated manufacturing lines to detect the presence of objects and measure distances accurately.
+#### Level Sensing: 
+Monitor the level of liquids or solids in containers or silos (e.g., fuel tanks, water tanks).
+#### Proximity Sensing: 
+Ensure safe operations in machinery by detecting nearby objects or personnel.
+
+#### ii.Robotics:
+#### Obstacle Avoidance:
+Essential for autonomous robots and drones to navigate safely in dynamic environments.
+#### SLAM (Simultaneous Localization and Mapping): 
+Helps in creating maps by determining distances to objects.
+
+#### iii.Smart Cities and IoT:
+#### Parking Assistance: 
+Measure distances between vehicles and walls or other objects in parking systems.
+#### Traffic Management: 
+Monitor traffic flow by measuring distances between vehicles.
+
+#### iv.Consumer Electronics:
+#### Home Automation: 
+Implement in smart home systems for tasks like automated door openers or monitoring room occupancy.
+#### Security Systems: 
+Detect unauthorized entry by sensing proximity.
+
+#### v.Education and Prototyping:
+Provides a practical example to learn about:
+Sensor integration,
+Signal processing and
+Microcontroller programming.
+
+#### vi.Healthcare:
+#### Blind Assistance Devices: 
+Measure distances to help visually impaired individuals navigate safely.
+
 #### Components Required:
 1.VSDsquadron Mini Board - 1
 2.HC-SR04 Ultrasonic Sensor - 1
 3.Breadboard - 1
 4.Jumper Wires - Several
 5.USB Cable - 1 (for power and programming)
-6.LCD Display (Optional, for visual output)
-7.Resistor (1kΩ) (for voltage division if required for echo pin to protect the GPIO)
+6.Servo Motor: To enable the sensor to rotate and detect the distance of various objects around it.
 
 #### Circuit Connection:
 The ultrasonic sensor has four pins: VCC, Trig, Echo, and GND. We will connect these to the VSDsquadron Mini Board as per the pin connections given in the table below.
 
-#### HC-SR04 Pin	      Description    	         VSDsquadron Mini Board Pin
-     VCC	              Power supply(+5V)	          5V
-     GND	              Ground	                     GND
-     Trig	             Trigger Pulse Input	        GPIO 5
-     Echo	             Echo Pulse Output	          GPIO 6
+<img width="506" alt="Screenshot 2024-11-16 222722" src="https://github.com/user-attachments/assets/1b53d419-59be-43c8-8d4c-a0953ed81fda">
 
 ### Circuit Explanation:
 #### Power Connections:
@@ -293,9 +330,52 @@ i.Connect the VCC pin of the HC-SR04 sensor to the 5V pin of the VSDsquadron Min
 ii.Connect the GND pin of the sensor to the GND pin of the board.
 
 #### Trigger and Echo Connections:
-i.The Trig pin is connected to GPIO 5; this pin is used to send a pulse to initiate the measurement.
-ii.The Echo pin is connected to GPIO 6; this pin receives the reflected signal.
+i.The Trig pin is connected to PC1; this pin is used to send a pulse to initiate the measurement.
+ii.The Echo pin is connected to PC2; this pin receives the reflected signal.
+
  <img width="533" alt="image" src="https://github.com/user-attachments/assets/4512025e-64c0-4e9a-b176-669410f2d702">
+
+
+# Task 6:
+### Upload Final working code and short video of the application:
+#### Working:
+
+### HC-SR04 Ultrasonic Sensor:  
+### Transmitter (Tx): 
+Emits ultrasonic sound waves at a high frequency (typically 40 kHz).
+### Receiver (Rx): 
+Detects the reflected sound waves (echo) from an object.
+### Microcontroller:
+The VSDsquadron Mini Board processes the signals and calculates the distance.
+### Power Supply: 
+Provides power to the sensor and board.
+### Output Display or Indicator: 
+Could be an LCD, LED, or serial output to display the measured distance.
+
+### Working Principle:
+#### The system operates based on the time-of-flight (ToF) principle:
+### Trigger Pulse:
+The microcontroller sends a short trigger pulse (usually 10 µs) to the ultrasonic sensor to initiate measurement.
+### Ultrasonic Wave Emission:
+The transmitter emits an ultrasonic sound wave.
+### Reflection of Wave:
+The wave travels through the air and reflects back when it encounters an object.
+### Echo Detection:
+The receiver detects the returning echo wave.
+### Time Measurement:
+The microcontroller measures the time duration (Δt) between sending the trigger pulse and receiving the echo.
+
+### Distance Calculation:
+The distance to the object is calculated using the formula:
+### Distance=(Speed of Sound×Time Duration)/2
+The factor of 2 accounts for the round-trip of the sound wave (to the object and back).
+### Speed of Sound: 
+Depends on air temperature, typically ~343 m/s at 20°C.
+
+### Output Display:
+The microcontroller processes the calculated distance and displays it on the chosen output (e.g., an LCD screen) or sends the data via serial communication for further use.
+
+
 
 
 
