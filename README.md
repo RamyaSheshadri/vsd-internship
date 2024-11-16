@@ -3,12 +3,18 @@
 ## VSDSquadron Mini Research Internship
 ## Instructor: Mr.Kunal Ghosh
 
+### Download Oracle VirtualBox Manager:
+<img width="548" alt="oracle virtualbox" src="https://github.com/user-attachments/assets/d91a57db-cbf1-47f1-a683-8c3cb24e0053">
+
+### Click on "Show" to obtain the following:
+![vsdworkshop  Running  - Oracle VirtualBox 16-11-2024 21_41_46](https://github.com/user-attachments/assets/e3e4a933-8c79-44b5-bbe5-43615551bfad)
+
 # Task 1:
 #### Create GitHub repo.
 #### Install RISC-V toolchain using VDI shared over whatsapp group. 
 #### Refer to C based Lab video and RISC-V based lab videos. 
 #### Complete exact steps on your machine.
-#### Upload snapshot of compiled C code and RISC-V Objdmp on your GitHub repo.
+#### Upload snapshot of compiled C code and RISC-V Objdmp on your GitHub repo
 
 
 ### i)A C program of summation of numbers from 1 to n:
