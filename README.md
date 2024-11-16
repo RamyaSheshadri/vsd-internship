@@ -376,72 +376,11 @@ Depends on air temperature, typically ~343 m/s at 20°C.
 The microcontroller processes the calculated distance and displays it on the chosen output (e.g., an LCD screen) or sends the data via serial communication for further use.
 
 ## Working Code:
-// Includes Servo library; ensure compatibility with VSD Squadron Mini
-#include <Servo.h>
+<img width="956" alt="task 6 code i" src="https://github.com/user-attachments/assets/8922078d-7f29-4744-b5fc-bd50a1a9a51b">
 
+<img width="957" alt="task 6 code ii" src="https://github.com/user-attachments/assets/0c3c0750-37b4-4c57-b8b6-734076a71d27">
 
-// Define pins for the Ultrasonic Sensor
-const int trigPin = PC1; // Replace <TRIG_PIN> with the correct pin number for your board
-const int echoPin = PC2; // Replace <ECHO_PIN> with the correct pin number for your board
-const int servoPin=PC0;
-// Variables for the duration and the distance
-long duration;
-int distance;
-
-
-Servo myServo; // Creates a servo object for controlling the servo motor
-
-
-void setup() {
-  pinMode(trigPin, OUTPUT); // Sets the trigPin as an Output
-  pinMode(echoPin, INPUT);  // Sets the echoPin as an Input
-  Serial.begin(9600);       // Initialize Serial communication
-  myServo.attach(PC0); // Replace <SERVO_PIN> with the correct servo motor pin for your board
-}
-
-
-void loop() {
-  // Rotates the servo motor from 15 to 165 degrees
-  for (int i = 15; i <= 165; i++) {  
-    myServo.write(i);
-    delay(30);
-    distance = calculateDistance(); // Calls a function to calculate the distance measured by the Ultrasonic sensor
-   
-    Serial.print(i); // Sends the current degree into the Serial Port
-    Serial.print(",");
-    Serial.print(distance); // Sends the distance value into the Serial Port
-    Serial.print(".");
-  }
-
-
-  // Repeats the previous lines from 165 to 15 degrees
-  for (int i = 165; i > 15; i--) {  
-    myServo.write(i);
-    delay(30);
-    distance = calculateDistance();
-    Serial.print(i);
-    Serial.print(",");
-    Serial.print(distance);
-    Serial.print(".");
-  }
-}
-
-
-// Function for calculating the distance measured by the Ultrasonic sensor
-int calculateDistance() {
-  digitalWrite(trigPin, LOW);
-  delayMicroseconds(2);
-  // Sets the trigPin on HIGH state for 10 microseconds
-  digitalWrite(trigPin, HIGH);
-  delayMicroseconds(10);
-  digitalWrite(trigPin, LOW);
-
-
-  // Reads the echoPin, returns the sound wave travel time in microseconds
-  duration = pulseIn(echoPin, HIGH);
-  distance = duration * 0.034 / 2; // Calculate distance in cm
-  return distance;
-}
+<img width="959" alt="task 6 code iii" src="https://github.com/user-attachments/assets/6563d656-6124-4a5f-96c6-8c4cab62f6db">
 
 
 
