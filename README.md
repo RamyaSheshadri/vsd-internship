@@ -383,6 +383,9 @@ The microcontroller processes the calculated distance and displays it on the cho
 
 <img width="959" alt="task 6 code iii" src="https://github.com/user-attachments/assets/6563d656-6124-4a5f-96c6-8c4cab62f6db">
 
+### Hardware Implementation using VSDSquadron Mini Board:
+![photo_6179217101873594735_y](https://github.com/user-attachments/assets/a1faccfd-35ee-40fc-a39a-147222175709)
+![photo_6179217101873594736_y](https://github.com/user-attachments/assets/ebfbd99e-fef1-4867-b620-f700e8c83667)
 
 
 
