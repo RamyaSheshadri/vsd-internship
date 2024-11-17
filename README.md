@@ -353,7 +353,7 @@ Provides power to the sensor and board.
 ### Output Display or Indicator: 
 Could be an LCD, LED, or serial output to display the measured distance.
 
-### Working Principle:
+## Working Principle:
 #### The system operates based on the time-of-flight (ToF) principle:
 ### Trigger Pulse:
 The microcontroller sends a short trigger pulse (usually 10 µs) to the ultrasonic sensor to initiate measurement.
