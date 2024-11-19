@@ -393,6 +393,8 @@ The microcontroller processes the calculated distance and displays it on the cho
 https://drive.google.com/drive/folders/13aOlga7CGLf0ptX6akLjjJZz6YfMKxY1?usp=sharing
 
 
+# Acknowledgement:
+I heartly thank Mr.Kunal Ghosh sir for giving us this oppurtunity to explore and learn about microcontrollers and RISC V architecture.It has expanded my knowledge vastly and made me discover more and more about electronics.I wish to persue my career in the field of electronics and this has paved my way for it.
 
 
 
