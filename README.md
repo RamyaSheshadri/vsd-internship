@@ -146,6 +146,12 @@ The term "BLL" might be specific to a product, a company, or a framework where i
 
 
 # Task 3:
+##### i)List various RISC-V instruction type (R, I, S, B, U, J) after going through RISC-V software documentation
+##### ii)Identify 15 unique RISC-V instructions from riscv-objdmp of your application code 
+##### iii)Identify exact 32-bit instruction code in the instruction type format for 15 unique instructions
+##### iv)Upload the 32-bit pattern on Github.
+
+
 #### i)Various RISC-V Instruction Types:
 The main RISC-V instruction types include:
 R-type: Register-Register operations (e.g., add, sub)
