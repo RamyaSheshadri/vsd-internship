@@ -63,9 +63,12 @@ In summary, this command compiles the C file sum1ton.c for a 64-bit RISC-V syste
 
 #### What is ls -ltr?
 The ls -ltr command is a combination of options for the ls command in Unix/Linux, which lists directory contents. Here's a breakdown of the flags:
--l: Long format. This option provides a detailed listing that includes file permissions, number of links, owner, group, size, and modification time of the files.
--t: Sort by modification time. Files are sorted by the time they were last modified, with the most recently modified files appearing first.
--r: Reverse order. This option reverses the sorting order. When used with -t, it shows the oldest modified files first (instead of the most recent).
+##### -l: Long format.
+This option provides a detailed listing that includes file permissions, number of links, owner, group, size, and modification time of the files.
+##### -t: Sort by modification time. 
+Files are sorted by the time they were last modified, with the most recently modified files appearing first.
+##### -r: Reverse order. 
+This option reverses the sorting order. When used with -t, it shows the oldest modified files first (instead of the most recent).
 ls -ltr: Lists all files and directories in the current directory (or a specified directory) in long format, sorted by the oldest modification time first.
 
 #### What is objdump?
