@@ -71,11 +71,12 @@ Files are sorted by the time they were last modified, with the most recently mod
 This option reverses the sorting order. When used with -t, it shows the oldest modified files first (instead of the most recent).
 ls -ltr: Lists all files and directories in the current directory (or a specified directory) in long format, sorted by the oldest modification time first.
 
-#### What is objdump?
+### What is objdump?
 objdump is a command-line utility used to display information about binary files, such as object files, executables, shared libraries, or core dumps. It is commonly used for debugging, reverse engineering, or inspecting the internal structure of binaries.
-Explanation of command riscv64-unknown-elf-objdump -d sum1ton.c
+#### Explanation of command riscv64-unknown-elf-objdump -d sum1ton.c
 The riscv64-unknown-elf-objdump is a tool used for disassembling or displaying information about object files or binaries compiled for the RISC-V 64-bit architecture.
--d: This option is for disassembly. It tells objdump to disassemble the machine code in the object file or executable and display it in assembly language.
+##### -d: 
+This option is for disassembly. It tells objdump to disassemble the machine code in the object file or executable and display it in assembly language.
 To disassemble an object file, you'd first compile the C source file (sum1ton.c) into an object file (sum1ton.o) using the RISC-V compiler, and then use objdump on the compiled object file.
 
 #### How is using this command better in terms of number of instructions?
