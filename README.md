@@ -258,11 +258,11 @@ Run the following iverilog command to compile the Verilog code and testbench.
 'iverilog -o iiitb_rv32i iiitb_rv32i.v iiitb_rv32i_tb.v'
 ### v)Simulate the Verilog Code.
 After compiling, simulate the Verilog code by running the compiled file.
-'./iiitb_rv321'
+'./iiitb_rv32i'
 ### ![task 5](https://github.com/user-attachments/assets/97dbd1ff-99e8-41da-b44a-29cb50c8c1b0)
 
 ### vi)Open GTKWAVE to observe the waveforms by using following command:
-'gtkwave iiitb_rv321.vcd'
+'gtkwave iiitb_rv32i.vcd'
 #### Click on iiit_rv32i_tb under SST section.
 #### We get a set of commands which we have worked on in Task 3.
 #### Click on 'clk' under signals and drag it to the time section so that the corresponding waveform can be seen.
