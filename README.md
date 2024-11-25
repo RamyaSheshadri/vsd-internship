@@ -242,7 +242,8 @@ Type: I-Type (pseudoinstruction for addi)
 Binary Encoding: 00000000000000010110000000000011
 Type: I-Type
 
-# Task 4:Use this RISC-V Core Verilog netlist and testbench for functional simulation experiment. Upload waveform snapshots for the commands on your GitHub. Reference GitHub repo is here. 
+# Task 4:
+#### Use this RISC-V Core Verilog netlist and testbench for functional simulation experiment. Upload waveform snapshots for the commands on your GitHub. Reference GitHub repo is here. 
  ### i)Create a folder on the desktop in Oracle VirtualBox.
  ### ii)Change the directory to this path to clone the repository:
  cd path/of/folder
