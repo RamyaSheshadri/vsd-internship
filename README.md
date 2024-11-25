@@ -83,7 +83,7 @@ To disassemble an object file, you'd first compile the C source file (sum1ton.c)
 riscv64-unknown-elf-gcc -Ofast -mabi=lp64 -march=rv64i -o sum1ton.o sum1ton.c 
 #### -Ofast:
 This is an optimization flag. It enables the most aggressive optimizations, more so than -O3. It may break strict standards compliance in favor of improving speed. It includes all -O3 optimizations and disables strict floating-point math operations to increase performance.
-Be cautious with -Ofast, as it might change the behavior of programs that depend on strict adherence to standards
+We need to be cautious with -Ofast, as it might change the behavior of programs that depend on strict adherence to standards.
 
 
 
