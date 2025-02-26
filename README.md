@@ -423,9 +423,6 @@ https://drive.google.com/drive/folders/13aOlga7CGLf0ptX6akLjjJZz6YfMKxY1?usp=sha
 I heartly thank Mr.Kunal Ghosh sir for giving us this oppurtunity to explore and learn about microcontrollers and RISC V architecture.It has expanded my knowledge vastly and made me discover more and more about electronics.I wish to persue my career in the field of electronics and this has paved my way for it.In the span of 4 weeks,I am happy that I have learnt a lot more industry based electronics and wish to improve more in the same. 
 
 
-
-
-
-
+[vsd internship .pdf](https://github.com/user-attachments/files/18979055/vsd.internship.pdf)
 
 
